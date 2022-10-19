@@ -1,14 +1,16 @@
-Deletes a amenity object
+Updates a city object
 ---
 tags:
-    - Amenity
+    - City
 parameters:
-    - name: amenity_id
+    - name: city_id
       in: path
       type: string
       required: true
 responses:
   200:
-    description: Amenity deleted
+    description: City updated
   404:
     description: Resource not found
+  400:
+    description: Not a JSON

@@ -1,14 +1,14 @@
-Deletes a amenity object
+Retrieves a user object
 ---
 tags:
-    - Amenity
+    - User
 parameters:
-    - name: amenity_id
+    - name: user_id
       in: path
       type: string
       required: true
 responses:
   200:
-    description: Amenity deleted
+    description: List of users
   404:
     description: Resource not found

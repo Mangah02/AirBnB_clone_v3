@@ -1,14 +1,16 @@
-Deletes a amenity object
+Updates a user object
 ---
 tags:
-    - Amenity
+    - User
 parameters:
-    - name: amenity_id
+    - name: user_id
       in: path
       type: string
       required: true
 responses:
   200:
-    description: Amenity deleted
+    description: User updated
   404:
     description: Resource not found
+  400:
+    description: Not a JSON

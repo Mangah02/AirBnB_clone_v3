@@ -1,4 +1,4 @@
-Deletes a amenity object
+Updates a amenity object
 ---
 tags:
     - Amenity
@@ -9,6 +9,8 @@ parameters:
       required: true
 responses:
   200:
-    description: Amenity deleted
+    description: amenity updated
   404:
     description: Resource not found
+  400:
+    description: Not a JSON
